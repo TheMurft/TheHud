@@ -1,0 +1,23 @@
+name: TheHud
+version: '${project.version}'
+main: dev.thehud.TheHudPlugin
+author: TheMurft
+description: A cross-version tab list, nametag, chat, MOTD and boss bar plugin.
+commands:
+  thehud:
+    description: Manage and inspect TheHud.
+    usage: /thehud <reload|refresh|status|placeholders>
+    permission: thehud.admin
+    aliases: [hud]
+permissions:
+  thehud.admin:
+    description: Allows access to TheHud administrative commands.
+    default: op
+  thehud.group.owner:
+    default: op
+  thehud.group.admin:
+    default: false
+  thehud.group.mod:
+    default: false
+  thehud.group.vip:
+    default: false

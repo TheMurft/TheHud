@@ -1,0 +1,12 @@
+# TheHud 1.2.0 - Server list MOTD configuration
+enabled: true
+
+# Built-in placeholders: <online>, <max_players>, <tps>, <tps_color>,
+# <mspt>, <server_name>, <time>, and <date>.
+lines:
+  - '<gradient:#00E5FF:#246BFD><bold>✦ <server_name> ✦</bold></gradient> <dark_gray>│</dark_gray> <white>Survival Reimagined</white>'
+  - '<gray>Online: <aqua><online></aqua><dark_gray>/</dark_gray><aqua><max_players></aqua>  <dark_gray>•</dark_gray>  <green>Join the adventure!</green></gray>'
+
+# Use -1 to keep the value from server.properties.
+max-players: -1
+use-custom-icon: true

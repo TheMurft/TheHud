@@ -1,0 +1,32 @@
+# TheHud 1.2.0 - General, tab list, nametag and chat configuration
+# Text uses MiniMessage: https://docs.papermc.io/adventure/minimessage/format/
+
+settings:
+  server-name: 'Your Server'
+  refresh-interval-ticks: 20
+
+tablist:
+  enabled: true
+  header:
+    - ''
+    - '<gradient:#00E5FF:#7C4DFF><bold><server_name></bold></gradient>'
+    - '<gray>Welcome back, <white><player></white>!</gray>'
+    - ''
+  footer:
+    - ''
+    - '<gray>Online <aqua><online></aqua><dark_gray>/</dark_gray><aqua><max_players></aqua>  <dark_gray>•</dark_gray>  Ping <ping_color><ping>ms</ping_color>  <dark_gray>•</dark_gray>  TPS <tps_color><tps></tps_color></gray>'
+    - '<gray>World <white><world></white>  <dark_gray>•</dark_gray>  <white><time></white></gray>'
+    - '<yellow>play.example.net</yellow>'
+    - ''
+  # Available here: every built-in placeholder, plus <prefix> and <suffix>.
+  player-format: '<prefix><name><suffix> <dark_gray>[<ping_color><ping>ms</ping_color><dark_gray>]'
+
+nametag:
+  enabled: true
+  collision: true
+  show-friendly-invisibles: false
+
+chat:
+  enabled: true
+  # Special placeholders: <prefix>, <suffix>, <name>, and <message>.
+  format: '<prefix><white><name></white><suffix> <dark_gray>»</dark_gray> <gray><message></gray>'

@@ -1,0 +1,19 @@
+# TheHud 1.2.0 - Boss bar configuration
+enabled: true
+
+# Every built-in TheHud placeholder is supported in the title.
+title: '<gradient:#00E5FF:#246BFD><bold><server_name></bold></gradient> <dark_gray>•</dark_gray> <white><online>/<max_players> online</white> <dark_gray>•</dark_gray> <ping_color><ping>ms</ping_color>'
+
+# Available colors: BLUE, GREEN, PINK, PURPLE, RED, WHITE, YELLOW
+color: BLUE
+
+# Available styles: SOLID, NOTCHED_6, NOTCHED_10, NOTCHED_12, NOTCHED_20
+style: NOTCHED_10
+
+# Progress modes: STATIC, HEALTH, TPS, PING
+progress:
+  mode: STATIC
+  # Used only by STATIC. Range: 0.0 to 1.0
+  value: 1.0
+  # PING reaches 0% at this latency.
+  max-ping: 300

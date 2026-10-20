@@ -1,0 +1,30 @@
+# TheHud 1.2.0 - Group, prefix, suffix and sorting configuration
+# The first group for which the player has permission is selected.
+# Lower weights appear first in the player list.
+
+groups:
+  owner:
+    permission: 'thehud.group.owner'
+    weight: 0
+    prefix: '<dark_red><bold>OWNER</bold></dark_red> <red>'
+    suffix: ''
+  admin:
+    permission: 'thehud.group.admin'
+    weight: 10
+    prefix: '<red><bold>ADMIN</bold></red> <red>'
+    suffix: ''
+  mod:
+    permission: 'thehud.group.mod'
+    weight: 20
+    prefix: '<green><bold>MOD</bold></green> <green>'
+    suffix: ''
+  vip:
+    permission: 'thehud.group.vip'
+    weight: 30
+    prefix: '<gold><bold>VIP</bold></gold> <yellow>'
+    suffix: ''
+  default:
+    permission: ''
+    weight: 999
+    prefix: '<gray>'
+    suffix: ''
